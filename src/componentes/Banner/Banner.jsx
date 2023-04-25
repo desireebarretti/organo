@@ -1,5 +1,9 @@
+import './Banner.css'
+
 export default function Banner(){
     return (
-        <img src="../imagens/banner.png"></img>
+        <header>
+            <img src="../imagens/banner.png" alt="Banner principal"></img>
+        </header>
     )
 }
