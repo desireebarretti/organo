@@ -2,8 +2,8 @@ import './Botao.css'
 
 const Botao = (props) => {
     return (
-        <div>
-            
+        <div className='div-button'>
+            <button className='button'>{props.txt}</button>
         </div>
     )
 }

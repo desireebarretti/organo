@@ -1,0 +1,27 @@
+.div-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    margin-top: 1.4em;
+    background-color: #90F0D7;
+    border: none;
+    border-radius: 50px;
+    padding: 1em;
+    color: white;
+    text-transform: uppercase;
+    font-size: .9em;
+    vertical-align: center;
+    width: 60%;
+    font-weight: bolder;
+}
+
+.button:hover {
+    background-color: #6278F7;
+    color: white;
+    transition: .7s;
+    outline: 3px solid #90F0D7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
