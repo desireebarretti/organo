@@ -2,6 +2,7 @@ import './Formulario.css';
 import CampoTexto from '../CampoTexto/CampoTexto';
 import ListaSuspensa from '../ListaSuspensa/ListaSuspensa';
 
+
 const Formulario = () => {
   
     return (
@@ -12,6 +13,7 @@ const Formulario = () => {
                 <CampoTexto legenda="Cargo" place={'Digite seu cargo'} />
                 <CampoTexto legenda="Imagem" place={'Escolha sua foto'} />
                 <ListaSuspensa label="Escolha seu time"/>
+                
             </form>
         </section>
     )
