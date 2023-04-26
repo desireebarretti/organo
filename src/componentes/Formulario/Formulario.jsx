@@ -3,8 +3,8 @@ import CampoTexto from '../CampoTexto/CampoTexto';
 
 const Formulario = () => {
     return (
-        <section>
-            <form className='formulario-card'>
+        <section className='formulario-card'>
+            <form>
                 <h2>Preencha os dados para criar um card do colaborador</h2>
                 <CampoTexto legenda="Nome" place={'Digite seu nome'} />
                 <CampoTexto legenda="Cargo" place={'Digite seu cargo'} />

@@ -1,11 +1,16 @@
 .formulario-card{
-    background-color: #8a8a8a72;
-    width: 400px;
-    transform: translate(50%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.formulario-card form {
+    background-color: #f2f2f2;
     padding: 2em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.268);
     border-radius: 15px;
-
+    max-width: 60%;
 }
 
 h2 {
