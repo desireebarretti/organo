@@ -1,4 +1,5 @@
 import './CampoTexto.css';
+import Formulario from '../Formulario/Formulario';
 
 const CampoTexto = (props) => {
     return (
