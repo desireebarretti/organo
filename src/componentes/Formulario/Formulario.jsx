@@ -17,7 +17,7 @@ const Formulario = () => {
                 <CampoTexto legenda="Nome" place={'Digite seu nome'} obrigatorio={true}/>
                 <CampoTexto legenda="Cargo" place={'Digite seu cargo'} obrigatorio={true}/>
                 <CampoTexto legenda="Imagem" place={'Escolha sua foto'} />
-                <ListaSuspensa label="Escolha seu time"/>
+                <ListaSuspensa label="Escolha seu time"  obrigatorio={true}/>
                 <Botao txt='Criar Card'/>
             </form>
         </section>
