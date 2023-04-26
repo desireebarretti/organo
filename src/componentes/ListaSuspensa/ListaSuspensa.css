@@ -1,0 +1,12 @@
+select { 
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.268);
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: .5em;
+    color: #717171;
+}
