@@ -14,7 +14,11 @@ const ListaSuspensa = (props) => {
     return (
         <div>
             <label>{props.label}</label>
-            <select>
+
+            <select 
+            required={props.required} 
+            value={props.valor}
+            onChange={evento => props.alterado(evento.target.value)}>
                 {times.map(times =>
                     <option key={times}>{times}</option>
                 )}
