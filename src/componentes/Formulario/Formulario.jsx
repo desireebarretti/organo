@@ -2,23 +2,46 @@ import './Formulario.css';
 import CampoTexto from '../CampoTexto/CampoTexto';
 import ListaSuspensa from '../ListaSuspensa/ListaSuspensa';
 import Botao from '../Botão/Botao';
+import { useState } from 'react';
 
 const Formulario = () => {
-    
+
+    const [nome, setNome] = useState('')
+    const [cargo, setCargo] = useState('')
+    const [imagem, setImagem] = useState('')
+
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        alert('Salvo')
+        console.log('Form foi submetido => ', nome, cargo, imagem)
     }
 
     return (
         <section className='formulario-card'>
             <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar um card do colaborador</h2>
-                <CampoTexto legenda="Nome" place={'Digite seu nome'} obrigatorio={true}/>
-                <CampoTexto legenda="Cargo" place={'Digite seu cargo'} obrigatorio={true}/>
-                <CampoTexto legenda="Imagem" place={'Escolha sua foto'} />
-                <ListaSuspensa label="Escolha seu time"  obrigatorio={true}/>
-                <Botao txt='Criar Card'/>
+
+                <CampoTexto
+                    legenda="Nome"
+                    place={'Digite seu nome'} obrigatorio={true}
+                    valor={nome}
+                    alterado={valor => setNome(valor)} />
+
+                <CampoTexto
+                    legenda="Cargo"
+                    place={'Digite seu cargo'} obrigatorio={true}
+                    valor={cargo}
+                    alterado={valor => setCargo(valor)} />
+
+                <CampoTexto
+                    legenda="Imagem"
+                    place={'Escolha sua foto'}
+                    valor={imagem}
+                    alterado={valor => setImagem(valor)} />
+
+                <ListaSuspensa
+                    label="Escolha seu time" obrigatorio={true} />
+
+                <Botao txt='Criar Card' />
             </form>
         </section>
     )

@@ -1,17 +1,23 @@
 import './CampoTexto.css';
 import Formulario from '../Formulario/Formulario';
+import { useState } from 'react';
 
 const CampoTexto = (props) => {
-    let valor = ''
     const digitar = (evento) => {
-        valor = evento.target.value
-        console.log(valor)
+        props.alterado(evento.target.value)
     }
-    
+
     return (
         <div className='campo-texto'> 
+
             <label>{props.legenda}</label>
-            <input placeholder={props.place} required={props.obrigatorio} onChange={digitar}/>
+           
+            <input 
+            placeholder={props.place} 
+            required={props.obrigatorio} 
+            value={props.valor} 
+            onChange={digitar}/>
+
         </div>
     )
 }
