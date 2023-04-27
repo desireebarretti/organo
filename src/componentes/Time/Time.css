@@ -1,0 +1,12 @@
+.time {
+    text-align: center;
+    padding: 32px;
+}
+
+.time h3 {
+    font-size: 28px;
+    border-bottom: 4px solid;
+    /* desta forma o border abaixo ficará somente embaixo do elemento */
+    display: inline-block;
+    padding-bottom: 8px;
+}
