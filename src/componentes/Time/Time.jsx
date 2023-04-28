@@ -14,9 +14,7 @@ const Time = (props) => {
             }}>
                 {props.nome}
             </h3>
-
-            <Colaborador />
-
+        
         </section>
     )
 }

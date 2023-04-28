@@ -24,19 +24,21 @@ const Colaborador = (props) => {
             cargoColaborador: 'Gestor'
         }
     ]
-    
+
     return (
-        <div className='colaboradores'>
-            <div className='cabecalho' style={{
-                // backgroundColor: props.corPrimaria
-            }}>
-                <img src='../imagens/eu.jpeg' alt='Imagem do colaborador'className='div-img'></img>
+        <section className='section-colaboradores'>
+            <div className='colaboradores'>
+                <div className='cabecalho' style={{
+                    // backgroundColor: props.corPrimaria
+                }}>
+                    <img src='../imagens/eu.jpeg' alt='Imagem do colaborador' className='div-img'></img>
+                </div>
+                <div className='rodape'>
+                    <h4>Desirée Rossi{props.nomeColaborador}</h4>
+                    <h5>Desenvolvedora{props.cargoColaborador}</h5>
+                </div>
             </div>
-            <div className='rodape'>
-                <h4>Desirée Rossi{props.nomeColaborador}</h4>
-                <h5>Desenvolvedora{props.cargoColaborador}</h5>
-            </div>
-        </div>
+        </section>
     )
 }
 
