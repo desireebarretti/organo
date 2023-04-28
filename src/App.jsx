@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario/Formulario';
 import Time from './componentes/Time/Time';
+import Colaborador from './componentes/Colaborador/Colaborador';
 
 export default function App() {
 
