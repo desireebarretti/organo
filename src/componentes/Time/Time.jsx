@@ -2,6 +2,7 @@ import './Time.css'
 import Colaborador from '../Colaborador/Colaborador'
 
 const Time = (props) => {
+   
     return (
         <section className='time'
             style={{
@@ -13,7 +14,9 @@ const Time = (props) => {
             }}>
                 {props.nome}
             </h3>
+
             <Colaborador />
+
         </section>
     )
 }

@@ -1,4 +1,27 @@
-img {
+.div-img {
     border-radius: 50%;
     width: 100px;
+    position: relative;
+    bottom: -50px;
+}
+
+.colaboradores {
+    background-color: #F2F2F2;
+    padding: .7em;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f6f6f7d;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color:  #898989;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.rodape {
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }

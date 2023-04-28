@@ -1,23 +1,40 @@
 import './Colaborador.css'
 
 const Colaborador = (props) => {
-    // const card = [
-    //     {
-    //         imagem: 
-    //         nomeColaborador: 
-    //         cargo: 
-    //     }
-    // ]
+
+    const card = [
+        {
+            nomeColaborador: 'Renata Vasconcelos',
+            cargoColaborador: 'Programadora'
+        },
+        {
+            nomeColaborador: 'Willian Bonner',
+            cargoColaborador: 'CEO'
+        },
+        {
+            nomeColaborador: 'Leonardo Barretti',
+            cargoColaborador: 'Programador'
+        },
+        {
+            nomeColaborador: 'Fátima Bernardes',
+            cargoColaborador: 'Designer'
+        },
+        {
+            nomeColaborador: 'Luciano Hulk',
+            cargoColaborador: 'Gestor'
+        }
+    ]
+    
     return (
-        <div>
-            <div className='div-img' style={{
-                backgroundColor: props.corPrimaria
+        <div className='colaboradores'>
+            <div className='cabecalho' style={{
+                // backgroundColor: props.corPrimaria
             }}>
-                <img src='../imagens/eu.jpeg' alt='Imagem do colaborador'></img>
+                <img src='../imagens/eu.jpeg' alt='Imagem do colaborador'className='div-img'></img>
             </div>
-            <div>
-                <h4>{props.nomeColaborador}</h4>
-                <h5>{props.cargo}</h5>
+            <div className='rodape'>
+                <h4>Desirée Rossi{props.nomeColaborador}</h4>
+                <h5>Desenvolvedora{props.cargoColaborador}</h5>
             </div>
         </div>
     )
