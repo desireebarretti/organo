@@ -1,9 +1,18 @@
 import './Rodape.css'
 
 const Rodape = () => {
-    <div className='rodape'>
+    return (
+        <section className='section-rodape'>
+            <img src='../imagens/fundo.png'></img>
 
-    </div>
+            <img src="../imagens/fb.png" alt="" className='icone' />
+            <img src="../imagens/ig.png" alt="" className='icone' />
+            <img src="../imagens/logo.png" alt="Logo organo" className='icone-organo' />
+            <p>Desenvolvido por Desirée</p>
+
+        </section>
+    )
 }
 
-export default Rodape
+
+export default Rodape 

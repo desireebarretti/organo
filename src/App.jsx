@@ -3,6 +3,7 @@ import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario/Formulario';
 import Time from './componentes/Time/Time';
 import Colaborador from './componentes/Colaborador/Colaborador';
+import Rodape from './componentes/Rodape/Rodape';
 
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
   return (
     <div className="App">
       <Banner />
+  
       <Formulario colaboradorCadastrado={colaborador => adicionar(colaborador)} />
 
       {times.map(time =>
@@ -61,6 +63,7 @@ export default function App() {
           colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
         />)}
 
+      <Rodape />        
     </div>
   );
 }

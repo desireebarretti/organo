@@ -1,3 +1,16 @@
-.rodape {
+.section-rodape {
     background-color: #6278F7;
+
+}
+
+.icone {
+    width: 20px;
+}
+
+.icone-organo {
+    width: 70px;
+}
+
+.section-rodape p {
+    color: white;
 }
