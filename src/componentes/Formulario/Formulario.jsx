@@ -19,6 +19,7 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        
         // limpando o formulario
         setNome('')
         setCargo('')
