@@ -56,6 +56,7 @@ export default function App() {
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria} 
+          // usando filter para filtrar os colaboradores dentro de cada time
           colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
         />)}
 

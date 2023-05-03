@@ -4,7 +4,8 @@ import Colaborador from '../Colaborador/Colaborador'
 const Time = (props) => {
 
     return (
-        <section className='time'
+        // condição para aparecer os cards
+        (props.colaboradores.length > 0) && <section className='time'
             style={{
                 backgroundColor: props.corSecundaria
             }}>
