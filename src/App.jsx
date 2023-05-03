@@ -58,6 +58,7 @@ export default function App() {
           corSecundaria={time.corSecundaria} 
           colaboradores={colaboradores}
         />)}
+
     </div>
   );
 }
