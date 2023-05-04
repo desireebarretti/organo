@@ -3,6 +3,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .icone {
@@ -11,10 +12,6 @@
 
 .icone-organo {
     width: 90px;
-}
-
-.section-rodape p {
-    color: white;
 }
 
 .lista-icones {
