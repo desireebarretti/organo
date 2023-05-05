@@ -5,8 +5,9 @@ const Colaborador = (props) => {
     return (
         <section className='section-colaboradores'>
             <div className='colaboradores'>
+                    
                 <div className='cabecalho' style={{
-                    // backgroundColor: props.corPrimaria
+                    backgroundColor: '#bababa81'
                 }}>
                     <img src={props.imagem} alt={props.nome}className='div-img'></img>
                 </div>
